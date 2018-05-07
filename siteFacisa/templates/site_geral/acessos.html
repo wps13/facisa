@@ -9,21 +9,24 @@
     <title>Historico de Acesso</title>
 </head>
 <body>
-    <div>
+    <div >
         {% if access_records %}
-        <table>
-            <thead>
-                <th>
-                    <th>Site name</th>
-                    <th>Date Accessed</th>
-                </th>
+        <table class="table table-sm" style="width: 50%">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col" style="width: 50%">Site name</th>
+                    <th scope="col" style="width: 50%">Date Accessed</th>
+                </t>
             </thead>
         
         {% for acc in access_records %}
-        <tr>
-            <td>{{acc.name}}</td>
-            <td>{{acc.date}}</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>{{acc.name}}</td>
+                <td>{{acc.date}}</td>
+            </tr>
+        </tbody>
+        
         {% endfor %}
     </table>
     {% else %}
