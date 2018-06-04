@@ -20,12 +20,22 @@ from django.urls import path,include
 from django.conf import settings
 from site_geral import views
 
-urlpatterns = [
+urlpatterns =
+""""
+Inclue as urls configuradas no arquivo site_geral.urls através do include 
+e define o caminho para a página do administrador ( admin)
+"""
+[
     path('', include('site_geral.urls')),
     path('admin/', admin.site.urls),
 ]
 
+
 if settings.DEBUG:
+"""
+Caso o debug esteja ativado e esteja no ip especifica no arquivo settings.py,
+é retornado a barra lateral em conjunto com as urls previamente configuradas
+"""
     import debug_toolbar
     urlpatterns = [
         path('__debug__/', include(debug_toolbar.urls) )
