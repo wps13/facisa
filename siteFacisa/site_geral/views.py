@@ -28,3 +28,6 @@ def acessos(request):
     date_dict = {'access_records': webpages_list}
 
     return render(request, 'site_geral/acessos.html',context= date_dict)
+
+def controleCarga(request):
+    return render(request, 'site_geral/carga.html')
