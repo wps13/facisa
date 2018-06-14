@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Controle de Cargas</title>
-    <h1>    Olá, Bem vindo a página de controle de cargas</h1>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends "site_geral/base.html" %}
+{% load staticfiles %}
+  
+  {% block body_block %}
+  <div align="center">
+    <br><br>
+    <h3>Controle de acionamento das cargas</h3>
+    <br>
+    <p>Para alterar uma carga, primeiro selecione o local onde a mesma se encontra:</p>
+    <select name="" id="">
+        <option value="maq1">Máquina 1</option>
+        <option value="maq2">Máquina 2</option>
+    </select>
+    <br> <br>
+   <p>Estado atual : </p> 
+   
+   <button id="btnLiga" class="btn btn-dark"> Ligar</button>
+   <button id="btnDesliga" class="btn btn-dark">Desligar</button>
+
+    </div>
+   
+  {% endblock %}
