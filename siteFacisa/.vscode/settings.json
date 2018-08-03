@@ -1,4 +1,5 @@
 {
     "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/home/willane/miniconda3/envs/djangoenv/bin/python"
+    "python.pythonPath": "/home/willane/miniconda3/envs/djangoenv/bin/python",
+    "git.ignoreLimitWarning": true
 }
